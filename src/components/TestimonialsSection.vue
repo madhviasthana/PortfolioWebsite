@@ -58,19 +58,19 @@ const testimonials = ref([
     {
         id: 1,
         fullName: 'Mohammad Tanweer Salah',
-        image: 'src/assets/tanweer.jpeg', 
+       image: new URL('@/assets/tanweer.jpeg', import.meta.url).href,
         comment: 'A very hardworking and enthusiastic team leader, who has been a very valuable asset to the growth and marketing of GeeksGod. She is a very dedicated person at work and an expert in organizing and managing events and other community activities.',
     },
     {
         id: 2,
         fullName: 'Praveen Kumar Purushothaman',
-        image: 'src/assets/praveen.jpeg', 
+        image: new URL('@/assets/praveen.jpeg', import.meta.url).href, 
         comment: 'Madhvi’s hands-on approach to collaboration, leadership, proactiveness, and powerful character won her the respect of her peers. She is reliable, forward-thinking, and inspiring. Her marketing and content management expertise make her a great leader.',
     },
     {
         id: 3,
         fullName: 'Nitesh Keswani',
-        image: 'src/assets/nitesh.jpeg', 
+        image: new URL('@/assets/nitesh.jpeg', import.meta.url).href, 
         comment: 'Madhvi is a great professional to work with. Her work ethic is immaculate, and she always goes the extra mile to find efficient ways to complete tasks. She is an inspiration to the rest of us.',
     },
 ]);
