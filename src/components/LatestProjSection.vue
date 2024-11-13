@@ -16,7 +16,10 @@
                 data-aos="fade-right">
                 <div v-for="project in filteredProjects" :key="project.id">
                     <div class="h-52 md:h-[24rem] rounded-t-xl relative group"
-                         :style="{ backgroundImage: 'url(' + project.image + ')', backgroundSize: 'cover' }">                    
+                         :style="{  backgroundImage: 'url(' + project.image + ')',
+   backgroundSize: 'contain',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat' }">                    
                         <div class="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0
                                     hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
                             <a class="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
@@ -69,8 +72,8 @@ const Projects = ref([
         title: 'Netflix Clone',
         description: 'A TV interface clone of Netflix using Vue.js and Pinia, styled with Tailwind CSS.',
         technologies: ['Vue.js', 'Pinia', 'Tailwind CSS'],
-        gitURL: 'https://github.com/madhviasthana/NetflixClone',
-        webURL: ''
+        gitURL: 'https://netflix.themadhvi.com',
+        webURL: 'https://github.com/madhviasthana/NetflixClone'
     },
 
     {
@@ -80,8 +83,8 @@ const Projects = ref([
         title: 'Portfolio Website',
         description: 'Responsive portfolio with Laravel, Inertia.js, and Vue.js, offering an SPA experience.',
         technologies: ['Vite', 'Tailwind.css', 'Vue.js'],
-        gitURL: 'https://github.com/madhviasthana/portfolio',
-        webURL: ''
+        gitURL: 'https://themadhvi.com',
+        webURL: 'https://github.com/madhviasthana/portfolio'
     },
     {
         id: 4,
@@ -90,8 +93,8 @@ const Projects = ref([
         title: 'Text to Image Generator',
         description: 'A application which asks for text and generates the image corresponding to the text using OpenAI.',
         technologies: ['Vue.js', 'Vite', 'OpenAI'],
-        gitURL: 'https://github.com/madhviasthana/TextToImageConvertor_Using_OpenAI',
-        webURL: ''
+        gitURL: 'https://texttoimage.themadhvi.com/',
+        webURL: 'https://github.com/madhviasthana/TextToImageConvertor_Using_OpenAI'
     },
     {
         id: 5,
@@ -100,8 +103,8 @@ const Projects = ref([
         title: 'Blinkit Interactive Dashboard',
         description: 'A Power BI dashboard analyzing sales trends, product performance, and customer behavior.',
         technologies: ['Power BI', 'Data Visualization', 'SQL'],
-        gitURL: 'https://github.com/madhviasthana/Blinkit_Dashboard_Sales_Analysis',
-        webURL: ''
+        gitURL: 'https://btude-my.sharepoint.com/:u:/g/personal/asthamad_b-tu_de/Ea4NqCIrttJCjk3G1EqQ09ABa2F3S3VJ9fujOcZmNtaI-A?e=Zh5U1w',
+        webURL:  'https://github.com/madhviasthana/Blinkit_Dashboard_Sales_Analysis'
     },
     {
         id: 6,
@@ -110,8 +113,8 @@ const Projects = ref([
         title: 'Sugar Water Glucose Detection',
         description: 'Detection of Sugar in Water',
         technologies: ['Machine Learning', 'Data Analysis', 'Lab Measurements'],
-        gitURL: 'https://github.com/madhviasthana/Glucose-Detection-in-Sugar-Water-Solution-using-Ultrasonic-Velocity',
-        webURL: ''
+        gitURL: '',
+        webURL: 'https://github.com/madhviasthana/Glucose-Detection-in-Sugar-Water-Solution-using-Ultrasonic-Velocity'
     }
 ]);
 
@@ -123,3 +126,4 @@ const filteredProjects = computed(() => {
     return Projects.value.filter(project => project.category.toLowerCase() === selectedCategory.value.toLowerCase());
 });
 </script>
+
