@@ -86,7 +86,7 @@ const Projects = ref([
     {
         id: 4,
         category: 'Full-Stack Applications',
-        image: new URL('@/assets/chatgpt-to-voicegpt.jpg', import.meta.url).href,
+        image: new URL('@/assets/tti.jpeg', import.meta.url).href,
         title: 'Text to Image Generator',
         description: 'A application which asks for text and generates the image corresponding to the text using OpenAI.',
         technologies: ['Vue.js', 'Vite', 'OpenAI'],
