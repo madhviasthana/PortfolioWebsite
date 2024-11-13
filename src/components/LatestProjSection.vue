@@ -84,7 +84,7 @@ const Projects = ref([
         description: 'Responsive portfolio with Laravel, Inertia.js, and Vue.js, offering an SPA experience.',
         technologies: ['Vite', 'Tailwind.css', 'Vue.js'],
         gitURL: 'https://themadhvi.com',
-        webURL: 'https://github.com/madhviasthana/portfolio'
+        webURL: 'https://github.com/madhviasthana/PortfolioWebsite'
     },
     {
         id: 4,
